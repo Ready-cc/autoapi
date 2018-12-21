@@ -1,0 +1,20 @@
+-
+  url: /api/user/login
+  method: post
+  detail: 正常
+  params:
+    data: NULL
+    body: {"custName":"\u4e4b\u5bb6\u8001\u5ba2\u6237\u0032\u0030\u0031\u0038\u0030\u0035\u0032\u0031","idNumber":"340321197402226386"}
+  checks:
+    code: 1
+    message: 0
+-
+  url: /api/user/login
+  method: post
+  detail: 正常
+  params:
+    data: NULL
+    body: {"custName":"\u4e4b\u5bb6\u8001\u5ba2\u6237\u0032\u0030\u0031\u0038\u0030\u0035\u0032\u0031","idNumber":"340321197402226386"}
+  checks:
+    code: 1
+    message: 1

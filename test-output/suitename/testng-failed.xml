@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [suitename]" time-out="10000" data-provider-thread-count="5" allow-return-values="true">
+  <listeners>
+    <listener class-name="com.example.autoapi.export.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test thread-count="5" verbose="3" name="testename(failed)" time-out="10000">
+    <classes>
+      <class name="com.example.autoapi.test.testAll">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="test"/>
+          <include name="close"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="init"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.example.autoapi.test.testAll -->
+    </classes>
+  </test> <!-- testename(failed) -->
+</suite> <!-- Failed suite [suitename] -->

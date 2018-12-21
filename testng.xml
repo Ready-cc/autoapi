@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suitename" junit="false" verbose="3" parallel="false" thread-count="5" configfailurepolicy="skip"
+       annotations="javadoc" time-out="10000" skipfailedinvocationcounts="true" data-provider-thread-count="5"
+       object-factory="classname" allow-return-values="true" preserve-order="true" group-by-instances="false">
+
+    <test name="testename" junit="false" verbose="3" parallel="false" thread-count="1" annotations="javadoc"
+          time-out="10000" enabled="true" skipfailedinvocationcounts="true" preserve-order="true"
+          allow-return-values="true">
+        <classes>
+            <class name="com.example.autoapi.test.testAll">
+                <methods>
+                    <include name="test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+    <listener class-name="com.example.autoapi.export.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>

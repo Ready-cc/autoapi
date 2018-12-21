@@ -1,0 +1,25 @@
+#
+---
+  url: /pama/accounts/existence?requestNo=111111&uid=111111&ucid=111111
+  method: post
+  detail: 正常
+#  params:
+  data:
+  body:
+   custName: 之家老客户20180521
+   idNumber: "340321197402226386"
+#  checks:
+  code: 1
+  message: 0
+---
+  url: http://testpay.autohome.com.cn/pama/accounts/existence?requestNo=111111&uid=111111&ucid=111111
+  method: post
+  detail: 正常
+#  params:
+  data:
+  body:
+    custName: 之家老客户20180521
+    idNumber: "340321197402226386"
+#  checks:
+  code: 1
+  message: 1
